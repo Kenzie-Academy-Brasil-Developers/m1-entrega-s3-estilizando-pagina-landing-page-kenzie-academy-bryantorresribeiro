@@ -29,7 +29,14 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-segundaria: #f6f6f6;
+    --cor-principal-background: #007aff;
+    --cor-segundaria-background: #00043e;
+    --cor-principal-cinza: #818181;
+    --cor-segundaria-cinza: #303030;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -39,62 +46,219 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
-img{
-    max-width: 800px;
-}
+
 div.flex{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 div.full-container{
     width: 100%;
     max-width: 1850px;
     margin:0 auto;
 }
+
 div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
 }
+
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
 }
+div.flex-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.flex-col h2{
+    margin: 30px 0;
+}
+
+.flex-col button{
+    margin-top: 35px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid var(--cor-principal-cinza);
+    background-color: var( --cor-principal);
+    color: var(--cor-segundaria-cinza);
+    border-radius: 8px;
+    font-size: 14px;
+
+}
+
+.flex-col img{
+    width: 100px;
+    height: 100px;
+}
+
+.python img{
+    width: 180px;
+}
+
+.flex-col span, .flex-col li{
+    color: var(--cor-principal-cinza);
+    margin: 10px 0;
+}
+
+.flex-col h1, .flex-col span, .flex-col li, .flex-col p{
+    width: 80vw;
+}
+
+.color {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    background-color: var( --cor-segundaria);
+}
+.secaoCursos, footer{
+    display: none;
+}
+
 /* GERAL */
   
 /* HTML */
-/* Essa parte foi eu que mudei ass: bryan*/
 html{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: var(--cor-principal);
 }
 /* HTML */
   
 /* BODY */
-/* Essa parte foi eu que mudei ass: bryan*/
 body{
-    width: 320px;
-}
+    min-width: 320px;
+    height: 1000px;
 
-img{
-    width: 100px;
-    height: 100px;
 }
 /* BODY */
   
 /* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
+header{
+
+}
 
 /* INICIAL */
-main{}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
 /* INICIAL */
+
+img{
+    width: 70px;
+    height: 70px;
+    margin: 20px 0 0 20px;
+}
+/* HEADER */
+
+/* SEÇÃO DESTAQUE*/
+.secaoDestaque, .topo {
+    width: 100vw;
+    background-color: var(--cor-segundaria-background);
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: none;
+}
+
+.secaoDestaque, .secaoSobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.secaoDestaque h2, .secaoSobre{
+    width: 200px;
+    
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: inherit;
+}
+
+.secaoDestaque h2{
+    font-size: 35px;
+}
+
+.secaoSobre h2{
+    font-size: 24px;
+}
+.secaoSobre p{
+    font-size: 19px;
+}
+
+.secaoDestaque p{
+    margin: 20px 0;
+}
+
+.secaoDestaque{
+    height: 350px;
+    margin-bottom: 40px;
+   
+}
+
+.secaoDestaqueFormulario input{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    background-color: var(--cor-principal);
+    color:  var(--cor-principal-cinza);
+    border-radius: 5px 0 0 5px;
+}
+.secaoDestaqueFormulario{
+    display: flex;
+}
+.secaoDestaqueFormulario button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: var( --cor-principal-background);
+    color: var(--cor-principal);
+    border-radius: 0 5px 5px 0;
+    
+}
+/* SEÇÃO DESTAQUE*/
+
+/* SEÇÃO SOBRE*/
+.secaoSobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-segundaria-cinza);
+  }
+
+.secaoSobre figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-segundaria-cinza);
+}
+/* SEÇÃO SOBRE*/
+
+/* FOOTER */
+footer{
+    
+}
+/* FOOTER */
 
 /* EXTRAS */
 
