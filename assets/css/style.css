@@ -63,11 +63,25 @@ div.container{
 /* GERAL */
   
 /* HTML */
-html{}
+/* Essa parte foi eu que mudei ass: bryan*/
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 /* HTML */
   
 /* BODY */
-body{}
+/* Essa parte foi eu que mudei ass: bryan*/
+body{
+    width: 320px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
 /* BODY */
   
 /* HEADER */
