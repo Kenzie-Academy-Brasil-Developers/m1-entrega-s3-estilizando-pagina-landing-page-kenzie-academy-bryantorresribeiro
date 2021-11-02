@@ -61,7 +61,16 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+article{
+   font-family: 'Montserrat', sans-serif; 
+}
+
 /* HTML */
 /* Essa parte foi eu que mudei ass: bryan*/
 html{
@@ -69,6 +78,31 @@ html{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+/* Parte Jabes, article, .secaoCursos */
+article {
+    margin-bottom: 50px;
+}
+
+article h2, p, ul ,h3{
+    margin-bottom: 20px;
+}
+
+article li img,p {
+    margin-bottom: 20px;
+}
+.secaoCursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.secaoCursos p {
+    color: #818181;
+}
+
+.secaoCursos li{
+    margin-bottom: 50px;
 }
 /* HTML */
   
@@ -89,8 +123,20 @@ header{}
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    height: 142px;
+    width: 233px;
+    max-height: 50px;
+    max-width: 50px;
+}
 /* FOOTER */
+
+
 
 /* INICIAL */
 main{}
