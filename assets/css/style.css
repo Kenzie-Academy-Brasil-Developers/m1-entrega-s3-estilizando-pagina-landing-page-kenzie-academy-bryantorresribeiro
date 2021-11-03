@@ -237,6 +237,64 @@ footer img {
        .secaoCursos li{
            margin: 0 20px;
        }
-}
+       .large-container{
+           display: flex;
+           background-color: #00043e;
+           width: 110%;
+           justify-content: space-around;
+           align-items: center;
+
+       }
+       .large-container nav ul li{
+            text-align: center;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            padding: 0 10px;
+            display: inline-block;
+
+       }
+        .large-container nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 8px;
+            font-size: 16px;
+            border: 2px solid transparent;
+        }
+        .large-container nav ul li a:hover{
+            border: 2px solid #fff;
+        }
+       .large-container .menu{
+           display: none;
+       }
+       .large-container figure{
+            margin-bottom: 15px;
+       }
+       .secaoDestaque, .topo{
+           background-color: none;       
+       }
+       .large-container img{
+        display: block;
+        width: 100%;
+        max-width: 100px;
+        height: 50px;
+       }
+        nav{
+            display: flex;
+            margin-top: 15px;
+        }
+        .secaoDestaque{
+            background-image: url(/assets/img/background-destaque.webp);
+            width: 120%;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+    }
 
 /* MEDIA QUERIES */
