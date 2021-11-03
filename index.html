@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="icon-96x96.webp">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/stylepage2.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
-        <ul>
+        <ul class="Menu">
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
@@ -53,6 +53,7 @@
     <section class="secaoSobre">
 
       <article class="flex">
+        <div class="column">
 
         <!-- COLUNA ESQUERDA -->
         <div class="flex-col">
@@ -72,23 +73,26 @@
 
           <figure class="python">
             <img src="./assets/img/python.png" alt="python">
+            <figcaption>python</figcaption>
           </figure>      
 
         </div>
+      </div>
 
         <!-- COLUNA ESQUERDA -->
-        <section class="color">
-
-        <div class="flex-col">
+        <section>
+          <div class="esquerdinha">
+        <div class="flex-col-bases" id="um">
 
             <figure>
               <img src="./assets/img/JavaScript-logo.png" alt="Java Script">
+              <figcaption>Java Script</figcaption>
             </figure>      
 
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col-bases" id="dois">
 
             <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
@@ -100,6 +104,7 @@
             </ul>
 
         </div>
+      </div>
       </section>
 
 
