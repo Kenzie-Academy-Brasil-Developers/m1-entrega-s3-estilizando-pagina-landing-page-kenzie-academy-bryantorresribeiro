@@ -52,17 +52,15 @@ div.flex-col{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 0 20%;
+  
 }
 
-.flex-col h2{
-    margin: 30px 0;
-}
 
 .flex-col button{
     margin-top: 35px;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     border: 1px solid var(--cor-principal-cinza);
     background-color: var( --cor-principal);
     color: var(--cor-segundaria-cinza);
@@ -74,26 +72,66 @@ div.flex-col{
 .flex-col img{
     width: 100px;
     height: 100px;
+    margin: 15px 0;
 }
 
 .python img{
     width: 180px;
 }
 
+.large-container figure{
+ 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.large-container .menu{
+    width: 20px;
+    height: 15px;
+}
+
 .flex-col span, .flex-col li{
     color: var(--cor-principal-cinza);
     margin: 10px 0;
+    
 }
 
-.flex-col h1, .flex-col span, .flex-col li, .flex-col p{
+.center li {
+    list-style-type: circle;
+    text-align: justify;
+   
+    
+  }
+
+  .center{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+     
+   
+  }
+
+ 
+
+.flex-col h2, .flex-col span, .flex-col p{
     width: 80vw;
+   
+}
+
+.flex-col h2, ul{
+    margin: 20px 5px 40px;
 }
 
 .color {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 500px;
+    height: 650px;
     background-color: var( --cor-segundaria);
 }
 
@@ -114,6 +152,7 @@ html{
     align-items: center;
     flex-wrap: wrap;
     color: var(--cor-principal);
+    scroll-behavior: smooth;
 }
 
 /* SEÇÃO CURSO */
@@ -170,7 +209,9 @@ footer img {
 }
 /* FOOTER */
 
-
+.large-container img{
+    margin: 20px 0 0 20px;
+}
 
 /* INICIAL */
 main{
@@ -178,6 +219,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
    
   
 }
@@ -186,7 +228,7 @@ main{
 img{
     width: 70px;
     height: 70px;
-    margin: 20px 0 0 20px;
+    
 }
 /* HEADER */
 
@@ -210,16 +252,14 @@ nav{
     margin-bottom: 20px;
 }
 
-.secaoDestaque h2, .secaoSobre{
-    width: 200px;
-    
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: inherit;
-}
+
 
 .secaoDestaque h2{
+    text-align: center;
     font-size: 35px;
+    font-weight: inherit;
+    margin-top: -100px;
+    height: 80px;
 }
 
 .secaoSobre h2{
@@ -231,11 +271,13 @@ nav{
 
 .secaoDestaque p{
     margin: 20px 0;
+    font-size: 21px;
 }
 
 .secaoDestaque{
     height: 350px;
     margin-bottom: 40px;
+    
    
 }
 
@@ -270,6 +312,10 @@ nav{
 
 .secaoCursos h2{
     font-weight: bold;
+    font-size: 19px;
+}
+.secaoCursos p, .secaoCursos li, .secaoCursos span{
+    font-size: 15px;
 }
 /* SEÇÃO DESTAQUE*/
 
@@ -289,21 +335,6 @@ nav{
 }
 /* SEÇÃO SOBRE*/
 
-
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
