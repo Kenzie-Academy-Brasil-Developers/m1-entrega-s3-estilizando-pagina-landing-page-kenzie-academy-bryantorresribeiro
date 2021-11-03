@@ -19,12 +19,12 @@
       <!-- LOGO -->
       <figure>
         <img src="./assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
+        <img src="./assets/img/menu.png" alt="Menu" class="menu">
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
-        <ul>
+        <ul class="Menu">
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
@@ -55,6 +55,7 @@
     <section class="secaoSobre">
 
       <article class="flex">
+        <div class="column">
 
         <!-- COLUNA ESQUERDA -->
         <div class="flex-col">
@@ -72,28 +73,31 @@
         <!-- COLUNA DIREITA -->
         <div class="flex-col">
 
-          <figure>
+          <figure class="python">
             <img src="./assets/img/python.png" alt="python">
-            <figcaption>python</figcaption>  
+            <figcaption>python</figcaption>
           </figure>      
 
         </div>
+      </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <section>
+          <div class="esquerdinha">
+        <div class="flex-col-bases" id="um">
 
             <figure>
               <img src="./assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
+              <figcaption>Java Script</figcaption>
             </figure>      
 
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col-bases" id="dois">
 
             <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
+            <ul class="center">
                 <li>The standard Lorem Ipsum passage, used since the 1500s</li>
                 <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
                 <li>1914 translation by H. Rackham</li>
@@ -102,6 +106,8 @@
             </ul>
 
         </div>
+      </div>
+      </section>
 
 
 
@@ -115,7 +121,7 @@
       <article>
 
         <h2>COURSES</h2>
-        <p id="black">What we offer</p>
+        <p class="black">What we offer</p>
 
         <!-- LISTA DE CURSOS -->
         <ul>
@@ -218,9 +224,9 @@
   </main>
 
   <footer>
-    <figure>
+    <a href="#">
       <img src="assets/img/iconseta.png" alt="">
-    </figure>
+    </a>
   </footer>
 
   <script src="./assets/js/script.js"></script>
