@@ -37,7 +37,8 @@ family=Lato -> Títulos, textos
     --cor-principal-cinza: #818181;
     --cor-segundaria-cinza: #303030;
 }
-  
+/* VARIÁVEIS */
+
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
@@ -46,189 +47,46 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
-
-div.flex-col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 20%;
-  
-}
-
-
-.flex-col button{
-    margin-top: 35px;
-    width: 250px;
-    height: 50px;
-    border: 1px solid var(--cor-principal-cinza);
-    background-color: var( --cor-principal);
-    color: var(--cor-segundaria-cinza);
-    border-radius: 8px;
-    font-size: 14px;
-
-}
-
-.flex-col img{
-    width: 100px;
-    height: 100px;
-    margin: 15px 0;
-}
-
-.python img{
-    width: 180px;
-}
-
-.large-container figure{
- 
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5px;
-}
-
-.large-container .menu{
-    width: 20px;
-    height: 15px;
-}
-
-.flex-col span, .flex-col li{
-    color: var(--cor-principal-cinza);
-    margin: 10px 0;
-    
-}
-
-.center li {
-    list-style-type: circle;
-    text-align: justify;
-   
-    
-  }
-
-  .center{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-     
-   
-  }
-
- 
-
-.flex-col h2, .flex-col span, .flex-col p{
-    width: 80vw;
-   
-}
-
-.flex-col h2, ul{
-    margin: 20px 5px 40px;
-}
-
-.color {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 650px;
-    background-color: var( --cor-segundaria);
-}
-
-
-/* GERAL */
-h2{
-    font-family: 'Montserrat', sans-serif;
-}
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-
-/* HTML */
 html{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     color: var(--cor-principal);
     scroll-behavior: smooth;
 }
-
-/* SEÇÃO CURSO */
-article {
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; 
-}
-
-article h2, p, ul ,h3{
-    margin-bottom: 20px;
-}
-
-article li img,p {
-    margin-bottom: 20px;
-}
-.secaoCursos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.secaoCursos p {
-    color: #818181;
-}
-
-.secaoCursos li{
-    margin-bottom: 50px;
-}
-/* SEÇÃO CURSO */
-
-/* HTML */
-  
-/* BODY */
 body{
+    font-family: 'Lato', sans-serif;
     min-width: 320px;
     height: 1000px;
-
 }
-/* BODY */
-  
-
-  
-/* FOOTER */
-footer{
-    display: flex;
-    justify-content: center;
-}
-
-footer img {
-    height: 142px;
-    width: 233px;
-    max-height: 50px;
-    max-width: 50px;
-}
-/* FOOTER */
-
-.large-container img{
-    margin: 20px 0 0 20px;
-}
-
-/* INICIAL */
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-  
 }
-/* INICIAL */
-
 img{
     width: 70px;
-    height: 70px;
-    
+    height: 70px;   
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+/* GERAL */
+
+/* HEADER */
+.large-container figure{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.large-container .menu{
+    width: 20px;
+    height: 15px;
+}
+.large-container img{
+    margin: 20px 0 0 0;
 }
 /* HEADER */
 
@@ -236,14 +94,8 @@ img{
 .secaoDestaque, .topo {
     width: 100vw;
     background-color: var(--cor-segundaria-background);
-    padding: 0;
-    margin: 0;
 }
-
-nav{
-    display: none;
-}
-
+nav{display: none;}
 .secaoDestaque, .secaoSobre{
     display: flex;
     flex-direction: column;
@@ -251,71 +103,34 @@ nav{
     align-items: center;
     margin-bottom: 20px;
 }
-
-
-
+.secaoDestaque{height: 300px;}
 .secaoDestaque h2{
     text-align: center;
     font-size: 35px;
     font-weight: inherit;
-    margin-top: -100px;
-    height: 80px;
+    margin-top: -50px;
 }
-
-.secaoSobre h2{
-    font-size: 24px;
-}
-.secaoSobre p{
-    font-size: 19px;
-}
-
 .secaoDestaque p{
     margin: 20px 0;
     font-size: 21px;
 }
-
-.secaoDestaque{
-    height: 350px;
-    margin-bottom: 40px;
-    
-   
-}
-
+.secaoDestaqueFormulario{display: flex;}
 .secaoDestaqueFormulario input{
     width: 200px;
     height: 40px;
     padding-left: 10px;
-    border: none;
     background-color: var(--cor-principal);
     color:  var(--cor-principal-cinza);
+    border: none;
     border-radius: 5px 0 0 5px;
 }
-
-.secaoDestaqueFormulario{
-    display: flex;
-}
-
 .secaoDestaqueFormulario button{
     width: 80px;
     height: 40px;
-    border: none;
     background-color: var( --cor-principal-background);
     color: var(--cor-principal);
+    border: none;
     border-radius: 0 5px 5px 0;
-    
-}
-
-.secaoCursos h2, h3, #black{
-    color: black;
-    font-weight: inherit;
-}
-
-.secaoCursos h2{
-    font-weight: bold;
-    font-size: 19px;
-}
-.secaoCursos p, .secaoCursos li, .secaoCursos span{
-    font-size: 15px;
 }
 /* SEÇÃO DESTAQUE*/
 
@@ -325,16 +140,85 @@ nav{
     justify-content: center;
     align-items: center;
     color: var(--cor-segundaria-cinza);
-  }
-
-.secaoSobre figure{
+}
+.secaoSobre h2{font-size: 24px;}
+.secaoSobre p{font-size: 19px;}
+.flex-col span, .flex-col li{color: var(--cor-principal-cinza);}
+.flex-col{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 0 10%;  
+}
+.flex-col button{
+    margin-top: 35px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid var(--cor-principal-cinza);
+    background-color: var( --cor-principal);
     color: var(--cor-segundaria-cinza);
+    border-radius: 8px;
+    font-size: 14px;
+}
+.flex-col img{
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+}
+.color {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --cor-segundaria);
+}
+.center li{
+    list-style-type: circle;
+    text-align: justify;
 }
 /* SEÇÃO SOBRE*/
 
+/* SEÇÂO CURSOS*/
+article {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif; 
+}
+article h2, p, ul ,h3{
+    margin-bottom: 20px;
+}
+article li img, p{
+    margin-bottom: 20px;
+}
+.secaoCursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.secaoCursos h2, h3, .black{
+    color: var(--cor-segundaria-cinza);
+    font-weight: bold;
+}
+.secaoCursos h2{font-size: 19px;}
+.secaoCursos p, .secaoCursos li, .secaoCursos span{font-size: 15px;}
+.secaoCursos p {color: #818181;}
+.secaoCursos li{margin-bottom: 50px;}
+/* SEÇÂO CURSOS*/
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    height: 50px;
+    width: 50px;
+}
+/* FOOTER */
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
