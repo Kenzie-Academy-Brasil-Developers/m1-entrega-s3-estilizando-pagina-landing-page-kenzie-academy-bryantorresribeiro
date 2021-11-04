@@ -226,7 +226,7 @@ footer img {
 
     @media screen and (min-width: 768px) {
         body{
-            width: 768px;
+            width: 1024px;
         }
        .secaoCursos ul{
            width: 100vw;
@@ -239,7 +239,7 @@ footer img {
        }
        .large-container{
            display: flex;
-           background-color: #00043e;
+
            width: 110%;
            justify-content: space-around;
            align-items: center;
@@ -282,15 +282,24 @@ footer img {
             display: flex;
             margin-top: 15px;
         }
-        .secaoDestaque{
-            background-image: url(/assets/img/background-destaque.webp);
-            width: 120%;
-            align-items: center;
+        .flex-col{
+            max-width: 350px;
+            display: flex;
         }
-
-
-
-
+        .flex-col button {
+            width: 250px;
+            border-radius: 7px;
+            height: 50px;
+            border: solid;
+        }
+        .flex-col img {
+            margin: 15px 0;
+            width: 30vw;
+            height: 22vw;
+        }
+        .main{
+            text-align: none;
+        }
 
 
 
