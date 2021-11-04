@@ -336,52 +336,46 @@ footer img {
       
         /* SEÇÃO DESTAQUE*/
        .secaoDestaque{
-           background-image: url(/assets/img/background-destaque.webp);
-           background-repeat: no-repeat;
-           background-size: 100vw;
+            background-image: url(/assets/img/background-destaque.webp);
+            background-repeat: no-repeat;
+            background-size: 100vw;
         }
        .secaoDestaqueFormulario button:hover{
-        background-color: #0a1174;
-        color: #fff;
-        transition: 0.8s;
+            background-color: #0a1174;
+            color: #fff;
+            transition: 0.8s;
         }
+        .secaoDestaqueFormulario input{width: 420px;}
         /* SEÇÃO DESTAQUE*/
 
         /* SEÇÃO SOBRE*/
+        .secaoSobre button{width: 100px;}
         .secaoSobre button:hover{
             background-color: #007aff;
             color: #fff;
             transition: 0.8s;
         }
-        .flex-col{
-            max-width: 350px;
+        .secaoSobre .flex-col{
             display: flex;
             text-align: left;
-            text-align: justify;
+            align-items: flex-start;
         }
-        .flex-col button {
-            width: 250px;
-            border-radius: 7px;
-            height: 50px;
-            border: solid;
-        }
-        .flex-col img{
+        .js img{
             margin: 15px 0;
             width: 300px;
             height: 300px;
         }
-        .flex-col h2{font-size: 19px;}
+        .secaoSobre .python img{
+            width: 600px;
+            height: 300px;
+        }
+        .secaoSobre .flex-col h2{font-size: 19px;}
         .center li{margin-top: 8px;}
         .flex-col span{margin-top: 15px;}
-        .python img{
-            width: 550px;
-            margin-left: 200px;
-            margin-top: -50px;
-        }
         .ladoalado, .color{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
         /* SEÇÃO SOBRE*/
 
