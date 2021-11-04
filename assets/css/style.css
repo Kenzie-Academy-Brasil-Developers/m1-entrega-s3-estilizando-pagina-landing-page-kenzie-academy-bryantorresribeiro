@@ -56,23 +56,20 @@ html{
 }
 body{
     font-family: 'Lato', sans-serif;
-    width: 100vw;
     height: 1000px;
 }
 main{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 img{
     width: 70px;
     height: 70px;   
 }
-h2{
-    font-family: 'Montserrat', sans-serif;
-}
+h2{font-family: 'Montserrat', sans-serif;}
 /* GERAL */
 
 /* HEADER */
@@ -92,7 +89,7 @@ h2{
 
 /* SEÇÃO DESTAQUE*/
 .secaoDestaque, .topo {
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor-segundaria-background);
 }
 nav{display: none;}
@@ -141,19 +138,24 @@ nav{display: none;}
     align-items: center;
     color: var(--cor-segundaria-cinza);
 }
-.secaoSobre h2{font-size: 24px;}
+.secaoSobre h2{
+    font-size: 24px; 
+    margin-bottom: 30px;
+}
 .secaoSobre p{font-size: 19px;}
 .flex-col span, .flex-col li{color: var(--cor-principal-cinza);}
 .flex-col{
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 10%;  
+    margin: 10px 10px;
 }
 .flex-col button{
-    margin-top: 35px;
-    width: 250px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    width: 255px;
     height: 50px;
     border: 1px solid var(--cor-principal-cinza);
     background-color: var( --cor-principal);
@@ -165,6 +167,10 @@ nav{display: none;}
     width: 100px;
     height: 100px;
     margin: 15px 0;
+}
+.python img{
+    width: 200px;
+    height: 130px;
 }
 .color {
     width: 100vw;
@@ -182,18 +188,14 @@ nav{display: none;}
 /* SEÇÃO SOBRE*/
 
 /* SEÇÂO CURSOS*/
-article {
+article{
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif; 
 }
-article h2, p, ul ,h3{
-    margin-bottom: 20px;
-}
-article li img, p{
-    margin-bottom: 20px;
-}
-.secaoCursos {
+article h2, article p, article ul, article h3{margin-bottom: 20px;}
+article li img, article li p{margin-bottom: 20px;}
+.secaoCursos{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,9 +207,69 @@ article li img, p{
 }
 .secaoCursos h2{font-size: 19px;}
 .secaoCursos p, .secaoCursos li, .secaoCursos span{font-size: 15px;}
-.secaoCursos p {color: #818181;}
+.secaoCursos p {color: var(--cor-principal-cinza);}
 .secaoCursos li{margin-bottom: 50px;}
 /* SEÇÂO CURSOS*/
+
+/* SEÇÂO CONTATO*/
+.secaoContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    margin: 50px 5% 40px;
+    background-color: var( --cor-segundaria);
+    color: var(--cor-principal-cinza);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: inherit;
+}
+.flex{
+    justify-content: flex-start;
+}
+.secaoContato .flex-col{
+    justify-content: flex-start;
+    width: 250px;
+    margin: 0%;
+  
+}
+.secaoContato .flex-col h2{
+    margin: 20px 0;
+}
+
+.black{display: none;}
+.secaoContato a, .secaoContato li{
+    text-decoration: none;
+    margin: 20px 0;
+    color: var(--cor-principal-cinza);
+   }
+   .form-input-submit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   }
+   .form-input-model input{
+        width:250px;
+        height: 30px;
+        margin-bottom: 20px;
+        padding: 0 0 0 10px;
+   }
+   textarea{
+       height: 100px;
+       width:250px;
+       padding: 10px 0 0 10px;
+   }
+   .form-input-submit input{
+       margin-top: 20px;
+       width: 70px;
+       height: 35px;
+       background-color: var(--cor-principal);
+       border: 1px solid var(--cor-principal-cinza);
+   }
+   .secaoContato .flex-col{
+    text-align: start;
+}
+/* SEÇÂO CONTATO*/
 
 /* FOOTER */
 footer{
@@ -221,22 +283,35 @@ footer img {
 /* FOOTER */
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
 
-    @media screen and (min-width: 768px) {
-        body{
-            width: 1024px;
+    @media screen and (min-width: 1024px){
+        .secaoCursos, article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
        .secaoCursos ul{
-           width: 100vw;
            display: flex;
-           flex-wrap: wrap;
-           margin: 5% 5%;
+           justify-content: center;
+           flex-flow: row wrap;
+           width: 1000px;
        }
        .secaoCursos li{
-           margin: 0 20px;
+          margin: 0 20px;
        }
+       .secaoContato{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 300px;
+           margin: 20px 0 0 40px;
+           background-color: var( --cor-segundaria);
+           color: var(--cor-principal-cinza);
+           font-family: 'Montserrat', sans-serif; 
+           font-weight: inherit;
+       }
+
        .large-container{
            display: flex;
 
@@ -301,9 +376,62 @@ footer img {
             text-align: none;
         }
 
-
-
-
+       .black-hiddlen{display: none;}
+       .black{display: flex;}
+       .secaoContato a, .secaoContato li{
+            text-decoration: none;
+            margin: 20px 0;
+            color: var(--cor-principal-cinza);
+       }
+       .secaoContato .flex-col{
+           text-align: start;
+       }
+       .flex{
+           display: flex;
+       }
+       textarea{
+           width: 400px;
+           height: 90px;
+           padding: 10px 0 0 10px;
+       }
+       .input{
+           display: flex;
+           justify-content: space-between;
+       }
+       .input input{
+           width: 190px;
+           height: 30px;
+           margin: 20px 0;
+           padding: 0 0 0 10px;
+       }
+       .form-input-submit{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-end;
+       }
+       .form-input-submit input{
+           width: 55px;
+           height: 35px;
+           margin-top: 30px;
+           background-color: var(--cor-principal);
+           border: 1px solid var(--cor-principal-cinza);
+       }
+       .flex{
+        justify-content: center;
     }
+    .secaoContato .flex-col{
+        justify-content: center;
+        width: 500px;
+        margin: 0%;
+    }
+
+    /* Foi aqui que fiz o flex lado a lado */
+    .ladoalado, .color{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 
 /* MEDIA QUERIES */
