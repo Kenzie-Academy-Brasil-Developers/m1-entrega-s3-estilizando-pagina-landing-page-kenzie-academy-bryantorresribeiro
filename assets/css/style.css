@@ -138,19 +138,24 @@ nav{display: none;}
     align-items: center;
     color: var(--cor-segundaria-cinza);
 }
-.secaoSobre h2{font-size: 24px;}
+.secaoSobre h2{
+    font-size: 24px; 
+    margin-bottom: 30px;
+}
 .secaoSobre p{font-size: 19px;}
 .flex-col span, .flex-col li{color: var(--cor-principal-cinza);}
 .flex-col{
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 10%;  
+    margin: 10px 10px;
 }
 .flex-col button{
-    margin-top: 35px;
-    width: 250px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    width: 255px;
     height: 50px;
     border: 1px solid var(--cor-principal-cinza);
     background-color: var( --cor-principal);
@@ -162,6 +167,10 @@ nav{display: none;}
     width: 100px;
     height: 100px;
     margin: 15px 0;
+}
+.python img{
+    width: 200px;
+    height: 130px;
 }
 .color {
     width: 100vw;
@@ -184,12 +193,8 @@ article{
     flex-direction: column;
     font-family: 'Montserrat', sans-serif; 
 }
-article h2, p, ul ,h3{
-    margin-bottom: 20px;
-}
-article li img, p{
-    margin-bottom: 20px;
-}
+article h2, article p, article ul, article h3{margin-bottom: 20px;}
+article li img, article li p{margin-bottom: 20px;}
 .secaoCursos{
     display: flex;
     flex-direction: column;
@@ -202,7 +207,7 @@ article li img, p{
 }
 .secaoCursos h2{font-size: 19px;}
 .secaoCursos p, .secaoCursos li, .secaoCursos span{font-size: 15px;}
-.secaoCursos p {color: #818181;}
+.secaoCursos p {color: var(--cor-principal-cinza);}
 .secaoCursos li{margin-bottom: 50px;}
 /* SEÇÂO CURSOS*/
 
@@ -224,13 +229,11 @@ footer img {
             justify-content: center;
             align-items: center;
         }
-        .secaoCursos{
-            margin-top: 50px;
-        }
        .secaoCursos ul{
-           width: 100vw;
            flex-flow: row wrap;
-           margin: 5% 5%;
+       }
+       .secaoCursos li{
+          margin: 10px 10px;     
        }
     }
 /* MEDIA QUERIES */
