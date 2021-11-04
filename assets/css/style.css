@@ -56,23 +56,20 @@ html{
 }
 body{
     font-family: 'Lato', sans-serif;
-    width: 100vw;
     height: 1000px;
 }
 main{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 img{
     width: 70px;
     height: 70px;   
 }
-h2{
-    font-family: 'Montserrat', sans-serif;
-}
+h2{font-family: 'Montserrat', sans-serif;}
 /* GERAL */
 
 /* HEADER */
@@ -92,7 +89,7 @@ h2{
 
 /* SEÇÃO DESTAQUE*/
 .secaoDestaque, .topo {
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor-segundaria-background);
 }
 nav{display: none;}
@@ -182,7 +179,7 @@ nav{display: none;}
 /* SEÇÃO SOBRE*/
 
 /* SEÇÂO CURSOS*/
-article {
+article{
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif; 
@@ -193,7 +190,7 @@ article h2, p, ul ,h3{
 article li img, p{
     margin-bottom: 20px;
 }
-.secaoCursos {
+.secaoCursos{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,19 +218,19 @@ footer img {
 /* FOOTER */
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-    @media screen and (min-width: 768px) {
-        body{
-            width: 768px;
+    @media screen and (min-width: 1024px){
+        .secaoCursos, article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .secaoCursos{
+            margin-top: 50px;
         }
        .secaoCursos ul{
            width: 100vw;
-           display: flex;
-           flex-wrap: wrap;
+           flex-flow: row wrap;
            margin: 5% 5%;
-       }
-       .secaoCursos li{
-           margin: 0 20px;
        }
     }
 /* MEDIA QUERIES */
