@@ -124,6 +124,7 @@ nav{display: none;}
 .secaoDestaqueFormulario button{
     width: 80px;
     height: 40px;
+    font-size: 14px;
     background-color: var( --cor-principal-background);
     color: var(--cor-principal);
     border: none;
@@ -152,6 +153,12 @@ nav{display: none;}
     align-items: center;
     flex-direction: column;
     margin: 10px 10px;
+}
+main .secaoSobre .flex-col span{
+    margin-top: 40px;
+}
+.secaoSobre .flex-col li, .secaoSobre .flex-col span, .secaoSobre .flex-col p{
+   margin: 0 10%;
 }
 .flex-col button{
     margin-top: 55px;
@@ -335,6 +342,7 @@ footer img {
          /* SEÇÂO CURSOS*/
       
         /* SEÇÃO DESTAQUE*/
+       .secaoDestaque h2{font-size: 63px;}
        .secaoDestaque{
             background-image: url(/assets/img/background-destaque.webp);
             background-repeat: no-repeat;
@@ -349,6 +357,13 @@ footer img {
         /* SEÇÃO DESTAQUE*/
 
         /* SEÇÃO SOBRE*/
+        .secaoSobre h2{margin-top: 50px;}
+        .secaoSobre .flex-col p , .secaoSobre .flex-col span{margin: 0;}
+        .secaoSobre .flex-col span {margin-top: 20px;}
+        .secaoSobre .flex-col{
+            margin-left: 30px; 
+            width: 400px;
+        }
         .secaoSobre button{width: 100px;}
         .secaoSobre button:hover{
             background-color: #007aff;
@@ -365,17 +380,16 @@ footer img {
             width: 300px;
             height: 300px;
         }
-        .secaoSobre .python img{
-            width: 600px;
+        .python img{
+            width: 500px;
             height: 300px;
         }
-        .secaoSobre .flex-col h2{font-size: 19px;}
         .center li{margin-top: 8px;}
         .flex-col span{margin-top: 15px;}
         .ladoalado, .color{
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+          
         }
         /* SEÇÃO SOBRE*/
 
