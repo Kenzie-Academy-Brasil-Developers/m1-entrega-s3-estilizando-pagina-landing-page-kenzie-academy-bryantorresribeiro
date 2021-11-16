@@ -44,7 +44,6 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     list-style: none;
 }
 html{
@@ -364,6 +363,7 @@ footer img {
             margin-left: 30px; 
             width: 400px;
         }
+        .secaoSobre .color h2{margin-left: 30px;}
         .secaoSobre button{width: 100px;}
         .secaoSobre button:hover{
             background-color: #007aff;
